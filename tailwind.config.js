@@ -1,7 +1,14 @@
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      roboto: ['Roboto', 'sans-serif'],
+    },
+    extend: {
+      width: {
+        90: '90vw',
+      },
+    },
   },
   plugins: [],
 }
