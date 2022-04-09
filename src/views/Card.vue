@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-import Categories from '@/components/Categories.vue'
+import Card from '@/components/Content.vue'
 import Nav from '@/components/Nav.vue'
-
-
 </script>
 <template>
   <Nav />
-  <Categories />
-  
+  <h1 style="position: absolute; z-index: 100; color: aliceblue; border: 2px solid red;">{{$route.params}}</h1>
+  <Card />
 </template>
 
 <style>
