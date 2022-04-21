@@ -1,3 +1,4 @@
+import { SoundsManager } from '@/audioAPI'
 import { Nature } from './nature'
 import { StarWars } from './star-wars'
 
@@ -12,5 +13,5 @@ export interface IAmbienceItem {
   title: string
   description: string
   img: string
-  soundManager: any // temporary
+  soundManager: SoundsManager // temporary
 }

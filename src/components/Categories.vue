@@ -22,7 +22,7 @@ function setCategory(value: ICategory){
       
       
         <div class="absolute z-10 gradient-item w-full h-full flex justify-center items-center font-roboto font-bold text-3xl px-2 text-shadow">{{item.name}}</div>
-        <img class="" :src="item.img" alt="">
+        <img class="w-full h-full object-cover" :src="item.img" alt="hell">
       
       </div>
       <div v-for="i in 26" :key="i" class="item cursor-pointer overflow-hidden w-full h-full flex text-white relative">
@@ -43,7 +43,7 @@ function setCategory(value: ICategory){
         <h1 class="text-white text-3xl mb-12">Category {{category.name}}</h1>
         <div   v-for="item in category.ambientCards" :key="item" class=" w-1/4 transition-shadow hover:shadow-md flex justify-start items-center my-2 h-24 bg-black bg-opacity-10 rounded-xl">
         <div class="overflow-hidden h-full p-5 flex">
-          <img class="w-24 shadow-2xl" :src="item.img" :alt="item.title">
+          <img class="w-24 h-full object-cover shadow-2xl" :src="item.img" :alt="item.title">
         </div>
         <div class="flex flex-col font-roboto text-white items-start justify-center ml-3">
           <div class="text-xl">{{item.title}}</div>
